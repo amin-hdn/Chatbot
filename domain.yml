@@ -23,6 +23,14 @@ responses:
   utter_happy:
   - text: "Great, carry on!"
 
+  utter_plan_ex:
+  - text: |
+    Sure, we will cover subject in term of layers, here is the plan for our conversation:
+    - Policy Privacy Layer : general information
+    - Data Layer:  discuss many aspects of Data collection/sharing/retention
+    - User interation Layer: user access and user control aspect
+    - Security & compliance Layer : this is clear i think.
+
   utter_goodbye:
   - text: "Bye"
 

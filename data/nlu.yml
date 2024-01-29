@@ -83,6 +83,20 @@ nlu:
     - so saad
     - so sad
 
+- intent: ask_plan
+  examples: |
+    - can explain me the process ?
+    - What's the plan for our conversation?
+    - Can you tell me the agenda?
+    - How are we going to proceed?
+    - What topics will we cover?
+    - Do you have a plan in mind?
+    - Outline the conversation for me.
+    - Explain the structure of our discussion.
+    - Can we go over the plan?
+    - What's on the agenda?
+    - Are there specific points we'll be covering?
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
