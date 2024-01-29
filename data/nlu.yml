@@ -97,7 +97,6 @@ nlu:
     - please wait.
     - No, I'm not ready.
     - I'm not prepared yet.
-    - I need more time.
     - Not at the moment.
     - I'm not ready to continue.
     - No, I'm not prepared.
@@ -108,7 +107,20 @@ nlu:
     - No, let's pause for now.
     - No I'm not ready now.
 
+- intent: ready
   examples: |
+    - Yes, I'm ready.
+    - I'm ready to proceed.
+    - Sure, let's continue.
+    - I'm prepared to discuss.
+    - Ready when you are.
+    - Absolutely, I'm ready.
+    - Yes, let's move forward.
+    - I'm all set to continue.
+    - Ready for the discussion.
+    - Indeed, I'm ready.
+    - Let's go ahead, I'm ready.
+
 
 - intent: bot_challenge
   examples: |

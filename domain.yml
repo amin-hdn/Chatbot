@@ -10,6 +10,7 @@ intents:
   - bot_challenge
   - ask_plan
   - not_ready
+  - ready
 
 responses:
   utter_greet:
@@ -25,10 +26,10 @@ responses:
   utter_happy:
   - text: "Great, carry on!"
 
-  utter_plan_ex:
+  utter_plan_explanation:
   - text: "Sure, we will cover subject in term of layers, here is the plan for our conversation:
 
-    - Policy Privacy Layer : general information
+    - Policy Definition Layer : general information
 
     - Data Layer :  discuss many aspects of Data collection/sharing/retention
     
