@@ -11,3 +11,8 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: every time the user say I'm not ready say I'm waiting for u
+  steps:
+  - intent: not_ready
+  - action: utter_not_ready

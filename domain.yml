@@ -9,6 +9,7 @@ intents:
   - mood_unhappy
   - bot_challenge
   - ask_plan
+  - not_ready
 
 responses:
   utter_greet:
@@ -37,6 +38,13 @@ responses:
 
   utter_goodbye:
   - text: "Bye"
+
+  utter_not_ready:
+    - text: "That's completely fine! Take your time, and we can continue when you're ready."
+    - text: "No problem at all. Whenever you're ready, feel free to let me know, and we can pick up from where we left off."
+    - text: "Sure, no rush. If there's anything specific on your mind or when you're ready to continue, just give me a shout."
+    - text: "Sure take your time."
+    - text: "OK, I'm waiting for you"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."

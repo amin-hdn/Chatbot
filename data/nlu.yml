@@ -90,6 +90,26 @@ nlu:
     - Can we go over the plan?
     - What's on the agenda?
     - Are there specific points we'll be covering?
+
+- intent: not_ready
+  examples: |
+    - wait a second.
+    - please wait.
+    - No, I'm not ready.
+    - I'm not prepared yet.
+    - I need more time.
+    - Not at the moment.
+    - I'm not ready to continue.
+    - No, I'm not prepared.
+    - I'm not in the right mindset.
+    - I need a break.
+    - Not ready to proceed.
+    - Can we talk later?
+    - No, let's pause for now.
+    - No I'm not ready now.
+
+  examples: |
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
