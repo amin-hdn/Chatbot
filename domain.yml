@@ -1,185 +1,212 @@
-version: "3.1"
-
-# This is the form definition of purposes_collection_form.
-# Note that we refer to slots defined below.
+version: '3.1'
 forms:
-  purposes_collection_form:
+  missions_collection_form:
     required_slots:
-      - purpose_1
-      - purpose_2
-      - purpose_3
-      - purpose_4
-      - purpose_5
-      - purpose_6
-      - purpose_7
-      - purpose_8
-
+    - mission_1
+    - mission_2
+    - mission_3
+    - mission_4
+    - mission_5
+    - mission_6
+    - mission_7
+    - mission_8
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - ask_plan
-  - not_ready
-  - ready
-  # form PD purpose intent
-  # - Want_Tell_purpose
-  # - inform_purpose
-  # - ask_suggestion_PD_purpose 
-############################## Entities #############################  
+- Want_Tell_mission
+- affirm
+- ask_plan
+- bot_challenge
+- deny
+- goodbye
+- greet
+- inform_mission
+- mood_great
+- mood_unhappy
+- not_ready
+- ready
+- suggestion_PD_mission
+- inform_company_name
+- inform_work_sector
+- inform_geographic_segmentation
 entities:
-  - purpose_1
-  - purpose_2
-  - purpose_3
-  - purpose_4
-  - purpose_5
-  - purpose_6
-  - purpose_7
-  - purpose_8
+- mission_2
+- mission_3
+- mission_1
+- mission_4
+- mission_5
+- mission_6
+- mission_7
+- mission_8
+- company_name
+- work_sector
+- geographic_segmentation
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
-
+  - text: Hey! How can I help you ?
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
   utter_did_that_help:
-  - text: "Did that help you?"
-
+  - text: Did that help you?
   utter_happy:
-  - text: "Great, carry on!"
-
+  - text: Great, carry on!
   utter_plan_explanation:
-  - text: "Sure, we will cover subject in term of layers, here is the plan for our conversation:
-
-    - Policy Definition Layer : general information
-
-    - Data Layer :  discuss many aspects of Data collection/sharing/retention
-    
-    - User interation Layer : user access and user control aspect
-
-    - Security & compliance Layer : this is clear i think."
-
+  - text: |-
+      Sure, we will cover subject in term of layers, here is the plan for our conversation:
+      - Policy Definition Layer : general information
+      - Data Layer :  discuss many aspects of Data collection/sharing/retention
+      - User interation Layer : user access and user control aspect
+      - Security & compliance Layer : this is clear i think.
   utter_goodbye:
-  - text: "Bye"
-
+  - text: Bye
   utter_not_ready:
-    - text: "That's completely fine! Take your time, and we can continue when you're ready."
-    - text: "No problem at all. Whenever you're ready, feel free to let me know, and we can pick up from where we left off."
-    - text: "Sure, no rush. If there's anything specific on your mind or when you're ready to continue, just give me a shout."
-    - text: "Sure take your time."
-    - text: "OK, I'm waiting for you"
-
+  - text: That's completely fine! Take your time, and we can continue when you're ready.
+  - text: No problem at all. Whenever you're ready, feel free to let me know, and we can pick up from where we left off.
+  - text: Sure, no rush. If there's anything specific on your mind or when you're ready to continue, just give me a shout.
+  - text: Sure take your time.
+  - text: OK, I'm waiting for you
   utter_iamabot:
-    - text: "I am a bot, powered by Rasa."
+  - text: I am a bot, powered by Rasa.
+  ################################ PD layer 
+  utter_PD_Layer_starter:
+  - text: I want to Let you know that we are in Policy Definition.
+  - text: We are now in the Policy defintion Layer
+  ################################
+  utter_ask_company_name:
+    - text: "What is the name of your company?"
+    - text: "Could you please provide the name of your company?"
+    - text: "I'd like to know the name of your company, please."
+    - text: "To proceed, could you share the name of your company with us?"
+    - text: "For our records, what is the name of your company?"
+    - text: "We'd appreciate it if you could tell us the name of your company."
+    - text: "Please enter the name of your company."
+    - text: "What's the name of the company you represent?"
 
-  utter_PD_Layer_starter: 
-    - text: "I want to Let you know that we are in Policy Definition."
+  utter_ask_company_work_sector:
+    - text: "What is the domain of your company?"
+    - text: "Could you tell me the industry or sector your company operates in?"
+    - text: "To better understand your company, may I ask about the industry you are in?"
+    - text: "What sector does your company specialize in?"
+    - text: "For our records, please provide information about the industry your company operates in."
+    - text: "I'd like to learn more about the sector in which your company works. Could you share that with me?"
+    - text: "To assist you better, could you specify the domain or industry of your company?"
+    - text: "May I ask about the sector or industry your company falls under?"
 
-  utter_give_suggetion_PD_purpose:
-    - text: |
+
+  utter_ask_geographic_segmentation:
+    - text: "Is your company international, national, or regional?"
+    - text: "Could you specify if your company operates at an international, national, or regional level?"
+    - text: "To better understand your company's scope, please let me know if it is international, national, or regional."
+
+  utter_give_suggetion_PD_mission:
+  - text: |-
       here is some exemples :
-      - purpose_1
-      - purpose_1
-      - purpose_1
-      - purpose_1
-  utter_submit_purposes_collection:
-  - text: "Thank you for providing the purposes. The collection has been submitted successfully!"
-  - text: "Great! The purposes have been recorded. Your collection has been submitted."
-  - text: "Excellent! We've received your purposes. The collection is now complete."
-
-  utter_purposes_collection_slots:
-    - text: "Here is a summary of the purposes you provided:\n
-            - Purpose 1: {purpose_1}\n
-            - Purpose 2: {purpose_2}\n
-            - Purpose 3: {purpose_3}\n
-            - Purpose 4: {purpose_4}\n
-            - Purpose 5: {purpose_5}\n
-            - Purpose 6: {purpose_6}\n
-            - Purpose 7: {purpose_7}\n
-            - Purpose 8: {purpose_8}"
-    - text: "Thanks! Here's a summary of the purposes you submitted:\n
-            - Purpose 1: {purpose_1}\n
-            - Purpose 2: {purpose_2}\n
-            - Purpose 3: {purpose_3}\n
-            - Purpose 4: {purpose_4}\n
-            - Purpose 5: {purpose_5}\n
-            - Purpose 6: {purpose_6}\n
-            - Purpose 7: {purpose_7}\n
-            - Purpose 8: {purpose_8}"
-    - text: "Got it! Here's the summary of your purposes:\n
-            - Purpose 1: {purpose_1}\n
-            - Purpose 2: {purpose_2}\n
-            - Purpose 3: {purpose_3}\n
-            - Purpose 4: {purpose_4}\n
-            - Purpose 5: {purpose_5}\n
-            - Purpose 6: {purpose_6}\n
-            - Purpose 7: {purpose_7}\n
-            - Purpose 8: {purpose_8}"
-
-
+       - Patient Care and Treatment
+       - Appointment Scheduling and Communication
+       - Insurance Processing
+       - Billing
+       - Health Research
+       - Quality Improvement 
+       - Telehealth
+       - Remote Monitoring
+  utter_submit_missions_collection_form:
+  - text: Thank you for providing the missions. The collection has been submitted successfully!
+  - text: Great! The missions have been recorded. Your collection has been submitted.
+  - text: Excellent! We've received your missions. The collection is now complete.
+  utter_missions_collection_slots:
+  - text: |-
+      Here is a summary of the missions you provided:
+       - mission 1: {mission_1}
+       - mission 2: {mission_2}
+       - mission 3: {mission_3}
+       - mission 4: {mission_4}
+       - mission 5: {mission_5}
+       - mission 6: {mission_6}
+       - mission 7: {mission_7}
+       - mission 8: {mission_8}
+  - text: |-
+      Thanks! Here's a summary of the missions you submitted:
+       - mission 1: {mission_1}
+       - mission 2: {mission_2}
+       - mission 3: {mission_3}
+       - mission 4: {mission_4}
+       - mission 5: {mission_5}
+       - mission 6: {mission_6}
+       - mission 7: {mission_7}
+       - mission 8: {mission_8}
+  - text: |-
+      Got it! Here's the summary of your missions:
+       - mission 1: {mission_1}
+       - mission 2: {mission_2}
+       - mission 3: {mission_3}
+       - mission 4: {mission_4}
+       - mission 5: {mission_5}
+       - mission 6: {mission_6}
+       - mission 7: {mission_7}
+       - mission 8: {mission_8}
+  utter_ask_mission_1:
+  - text: |-
+      What is the main mission to collect Data from your client in general?
+       I can give exemples if you want
+  utter_ask_mission_2:
+  - text: ther is another mission
 slots:
-  # slots for the form of purpose_collection_form 
-  purpose_1:
+  mission_1:
     type: text
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: purpose_1
-
-  purpose_2:
+    - type: from_entity
+      entity: mission_1
+  mission_2:
     type: text
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: purpose_2
-
-  purpose_3:
+    - type: from_entity
+      entity: mission_2
+  mission_3:
     type: text
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: purpose_3
-
-  purpose_4:
+    - type: from_entity
+      entity: mission_3
+  mission_4:
     type: text
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: purpose_4
-
-  purpose_5:
+    - type: from_entity
+      entity: mission_4
+  mission_5:
     type: text
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: purpose_5
-
-  purpose_6:
+    - type: from_entity
+      entity: mission_5
+  mission_6:
     type: text
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: purpose_6
-
-  purpose_7:
+    - type: from_entity
+      entity: mission_6
+  mission_7:
     type: text
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: purpose_7
+    - type: from_entity
+      entity: mission_7
+  mission_8:
 
-  purpose_8:
     type: text
     influence_conversation: true
     mappings:
-      - type: from_entity
-        entity: purpose_8  
-
+    - type: from_entity
+      entity: mission_8
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+e2e_actions:
+- are you ready to continue the conversation ??
+actions:
+- utter_ask_mission_2
+- utter_ask_mission_1
+- utter_greet
+- utter_PD_Layer_starter
+- utter_submit_missions_collection_form

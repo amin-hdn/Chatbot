@@ -90,7 +90,6 @@ nlu:
     - Can we go over the plan?
     - What's on the agenda?
     - Are there specific points we'll be covering?
-
 - intent: not_ready
   examples: |
     - wait a second.
@@ -120,29 +119,51 @@ nlu:
     - Ready for the discussion.
     - Indeed, I'm ready.
     - Let's go ahead, I'm ready.
+    - I'm ready to start the conversation
 
-
-- intent: Want_Tell_purpose
+- intent: inform_company_name
   examples: |
-    - I'd like to share my purposes.
-    - Can I tell you about my purposes?
-    - I want to provide information about my purposes.
-    - Ready to share my purposes with you.
+    - My company is called [XYZ Corp](company_name).
+    - The name of our company is [ABC Solutions](company_name).
+    - [XYZ Corporation](company_name) is our company's name.
+    - We are [Tech Innovators](company_name).
 
-- intent: ask_suggestion_PD_purpose_1
-  examples: >
-    - What is the purpose of the privacy policy?
-    - Can you provide suggestions for the purpose of the privacy policy?
+- intent: inform_work_sector
+  examples: |
+    - Our company operates in the [technology](work_sector) sector.
+    - [Healthcare](work_sector) is our industry.
+    - We specialize in [Marketing](work_sector).
+    - Our focus is on [Security](work_sector).
+
+- intent: inform_geographic_segmentation
+  examples: |
+    - We have an [international](geographic_segmentation) presence.
+    - Our company operates at the [national](geographic_segmentation) level.
+    - [reginal](geographic_segmentation) is our focus.
+    - We work on both [national](geographic_segmentation) and [regional](geographic_segmentation) scales.
+
+
+- intent: Want_Tell_mission
+  examples: |
+    - I'd like to share my missions.
+    - Can I tell you about my missions?
+    - I want to provide information about my missions.
+    - Ready to share my missions with you.
+- intent: inform_mission
+  examples: |
+    - our  missions  are [Patient Care and Treatment](mission_1)  and [Legal Compliance](mission_2) and  [Legal Compliance](mission_3).
+    - Our missions  include [Patient Care](mission_1) and [Legal Compliance](mission_2).
+    - I would like to inform you about the missions : [Patient Care](mission_1), [Legal Compliance](mission_2).
+    - Let me share the missions  with you: [Patient Care](mission_1), [Legal Compliance](mission_2).
+    - our  missions  are [Patient Care](mission_1) and [Treatment](mission_2) and [Legal Compliance](mission_3)
+- intent: suggestion_PD_mission
+  examples: |
+    - What is the mission of the privacy policy?
+    - Can you provide suggestions for the mission of the privacy policy?
     - I'm curious about the reasons for having a privacy policy.
     - Why do we need a privacy policy?
-    - Could you give me ideas about the purpose behind a privacy policy?
-    - What are some common purposes of privacy policies?
-
-
-- intent: inform_purpose
-  exemples: |
-    - our  purposes of collection Data are [Patient Care and Treatment](purpose_1)  and [Legal Compliance](purpose_2) . 
-
+    - Could you give me ideas about the mission behind a privacy policy?
+    - What are some common missions of privacy policies?
 - intent: bot_challenge
   examples: |
     - are you a bot?

@@ -2,7 +2,7 @@ version: "3.1"
 
 stories:
 
-- story: statement of purpose
+- story: statement of mission
   steps:
   # - action: self_presentation
   - intent: greet
@@ -11,14 +11,66 @@ stories:
   - action: utter_plan_explanation
   - bot: "are you ready to continue the conversation ??"
   - intent: ready
-  - action: utter_happy
+  - action: utter_PD_Layer_starter
+  - action: utter_ask_mission_1
+  - intent: inform_mission
+  - action: utter_ask_puprose_2
+  - intent: inform_mission
+  - action: utter_submit_missions_collection_form
 
-- story: Policy Definition Layer
+- story: User provides company details
+  steps:
+  - action: utter_ask_company_name
+  - intent: inform_company_name
+    entities:
+    - company_name: "XYZ Corp"
+  - action: utter_ask_work_sector
+  - intent: inform_work_sector
+    entities:
+    - work_sector: "technology"
+  - action: utter_ask_geographic_segmentation
+  - intent: inform_geographic_segmentation
+    entities:
+    - geographic_segmentation: "international"
+
+- story: Policy Definition Layer 
   steps:
   - action: utter_PD_Layer_starter
-  # - action: utter_ask_company_name
-  # - action: utter_ask_company_domain
-  # - action: utter_ask_geographic_segmentation # you can use here lookup tables 
+  - action: utter_ask_company_name
+  - intent: inform_company_name
+    entities:
+    - company_name: "XYZ Corp"
+  - action: utter_ask_work_sector 
+  - intent: inform_work_sector
+    entities:
+    - work_sector: "technology"
+  - action: utter_ask_geographic_segmentation # you can use here lookup tables 
+  - intent: inform_geographic_segmentation
+    entities:
+    - geographic_segmentation: "international"
+  - action: utter_ask_mission_1
+  - intent: inform_mission
+    entities:
+    - mission_1: Patient Care
+    - mission_1: Treatment
+    - mission_2: Legal Compliance
+  - slot_was_set:
+    - mission_1:  Patient Care
+  - slot_was_set:
+    - mission_2: Treatment 
+  - slot_was_set:
+    - mission_3: Legal Compliance
+  - slot_was_set:
+    - requested_slot: mission_4
+  - action: utter_ask_puprose_2
+  - intent: inform_mission
+  - slot_was_set:
+    - mission_4: Billing
+  - slot_was_set:
+    - requested_slot: mission_5
+  - action: utter_submit_missions_collection_form
+  
+
 
 - story: sad path 1
   steps:
@@ -39,5 +91,6 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
 
 
