@@ -19,27 +19,27 @@ rules:
 
 - rule: demand suggestion 
   steps:
-  - intent: ask_suggetion_PD_purpose
-  - action: utter_give_suggetion_PD_purpose 
+  - intent: suggestion_PD_mission
+  - action: utter_give_suggetion_PD_mission 
 
-- rule: Activate Purposes collection Form
+- rule: Activate missions collection Form
   steps:
-    - intent: Want_Tell_purpose
-    - action: purposes_collection_form
-    - active_loop: purposes_collection_form
+    - intent: Want_Tell_mission
+    - action: missions_collection_form
+    - active_loop: missions_collection_form
     
 
-- rule: Submit Purposes Collection Form
+- rule: Submit missions Collection Form
   # Ensure that we're starting from an active loop
   condition:
-  - active_loop: purposes_collection_form
+  - active_loop: missions_collection_form
   steps:
-  - action: purposes_collection_form
+  - action: missions_collection_form
   # If there are no more requested slots
   - active_loop: null
   - slot_was_set:
     - requested_slot: null
   # Then submit the form
-  - action: utter_submit_purposes_collection_form
-  - action: utter_purposes_collection_slots    
+  - action: utter_submit_missions_collection_form
+  - action: utter_missions_collection_slots    
     
