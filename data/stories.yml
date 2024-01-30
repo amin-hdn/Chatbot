@@ -13,6 +13,13 @@ stories:
   - intent: ready
   - action: utter_happy
 
+- story: Policy Definition Layer
+  steps:
+  - action: utter_PD_Layer_starter
+  # - action: utter_ask_company_name
+  # - action: utter_ask_company_domain
+  # - action: utter_ask_geographic_segmentation # you can use here lookup tables 
+
 - story: sad path 1
   steps:
   - intent: greet

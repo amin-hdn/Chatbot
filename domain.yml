@@ -1,5 +1,19 @@
 version: "3.1"
 
+# This is the form definition of purposes_collection_form.
+# Note that we refer to slots defined below.
+forms:
+  purposes_collection_form:
+    required_slots:
+      - purpose_1
+      - purpose_2
+      - purpose_3
+      - purpose_4
+      - purpose_5
+      - purpose_6
+      - purpose_7
+      - purpose_8
+
 intents:
   - greet
   - goodbye
@@ -11,7 +25,20 @@ intents:
   - ask_plan
   - not_ready
   - ready
-
+  # form PD purpose intent
+  # - Want_Tell_purpose
+  # - inform_purpose
+  # - ask_suggestion_PD_purpose 
+############################## Entities #############################  
+entities:
+  - purpose_1
+  - purpose_2
+  - purpose_3
+  - purpose_4
+  - purpose_5
+  - purpose_6
+  - purpose_7
+  - purpose_8
 responses:
   utter_greet:
   - text: "Hey! How are you?"
@@ -48,7 +75,110 @@ responses:
     - text: "OK, I'm waiting for you"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, powered by Rasa."
+
+  utter_PD_Layer_starter: 
+    - text: "I want to Let you know that we are in Policy Definition."
+
+  utter_give_suggetion_PD_purpose:
+    - text: |
+      here is some exemples :
+      - purpose_1
+      - purpose_1
+      - purpose_1
+      - purpose_1
+  utter_submit_purposes_collection:
+  - text: "Thank you for providing the purposes. The collection has been submitted successfully!"
+  - text: "Great! The purposes have been recorded. Your collection has been submitted."
+  - text: "Excellent! We've received your purposes. The collection is now complete."
+
+  utter_purposes_collection_slots:
+    - text: "Here is a summary of the purposes you provided:\n
+            - Purpose 1: {purpose_1}\n
+            - Purpose 2: {purpose_2}\n
+            - Purpose 3: {purpose_3}\n
+            - Purpose 4: {purpose_4}\n
+            - Purpose 5: {purpose_5}\n
+            - Purpose 6: {purpose_6}\n
+            - Purpose 7: {purpose_7}\n
+            - Purpose 8: {purpose_8}"
+    - text: "Thanks! Here's a summary of the purposes you submitted:\n
+            - Purpose 1: {purpose_1}\n
+            - Purpose 2: {purpose_2}\n
+            - Purpose 3: {purpose_3}\n
+            - Purpose 4: {purpose_4}\n
+            - Purpose 5: {purpose_5}\n
+            - Purpose 6: {purpose_6}\n
+            - Purpose 7: {purpose_7}\n
+            - Purpose 8: {purpose_8}"
+    - text: "Got it! Here's the summary of your purposes:\n
+            - Purpose 1: {purpose_1}\n
+            - Purpose 2: {purpose_2}\n
+            - Purpose 3: {purpose_3}\n
+            - Purpose 4: {purpose_4}\n
+            - Purpose 5: {purpose_5}\n
+            - Purpose 6: {purpose_6}\n
+            - Purpose 7: {purpose_7}\n
+            - Purpose 8: {purpose_8}"
+
+
+slots:
+  # slots for the form of purpose_collection_form 
+  purpose_1:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: purpose_1
+
+  purpose_2:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: purpose_2
+
+  purpose_3:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: purpose_3
+
+  purpose_4:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: purpose_4
+
+  purpose_5:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: purpose_5
+
+  purpose_6:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: purpose_6
+
+  purpose_7:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: purpose_7
+
+  purpose_8:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: purpose_8  
 
 session_config:
   session_expiration_time: 60

@@ -122,6 +122,27 @@ nlu:
     - Let's go ahead, I'm ready.
 
 
+- intent: Want_Tell_purpose
+  examples: |
+    - I'd like to share my purposes.
+    - Can I tell you about my purposes?
+    - I want to provide information about my purposes.
+    - Ready to share my purposes with you.
+
+- intent: ask_suggestion_PD_purpose_1
+  examples: >
+    - What is the purpose of the privacy policy?
+    - Can you provide suggestions for the purpose of the privacy policy?
+    - I'm curious about the reasons for having a privacy policy.
+    - Why do we need a privacy policy?
+    - Could you give me ideas about the purpose behind a privacy policy?
+    - What are some common purposes of privacy policies?
+
+
+- intent: inform_purpose
+  exemples: |
+    - our  purposes of collection Data are [Patient Care and Treatment](purpose_1)  and [Legal Compliance](purpose_2) . 
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
