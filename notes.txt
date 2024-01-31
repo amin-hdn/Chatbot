@@ -1,1 +1,21 @@
-I want to track context during conversation to keep where we are
+[] I want to track context during conversation to keep where we are
+
+
+[] I will need this, to detect the affirmation and the deny in a slot (bool)
+
+slots:
+   outdoor_seating:
+     type: bool
+     mappings:
+     - type: from_intent
+       intent: affirm
+       value: true
+     - type: from_intent
+       intent: deny
+       value: false
+
+[] you can change the Action_starter
+
+
+[x] Mission not Purpose
+[x] Change utter_great_exemples

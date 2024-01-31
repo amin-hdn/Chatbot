@@ -18,79 +18,41 @@ stories:
   - intent: inform_mission
   - action: utter_submit_missions_collection_form
 
-- story: User provides company details
+- story:  Policy_Definition_Layer_Complete
   steps:
-  - action: utter_ask_company_name
-  - intent: inform_company_name
-    entities:
-    - company_name: "XYZ Corp"
-  - action: utter_ask_work_sector
-  - intent: inform_work_sector
-    entities:
-    - work_sector: "technology"
-  - action: utter_ask_geographic_segmentation
-  - intent: inform_geographic_segmentation
-    entities:
-    - geographic_segmentation: "international"
-
-- story: Policy Definition Layer 
-  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ready
   - action: utter_PD_Layer_starter
   - action: utter_ask_company_name
   - intent: inform_company_name
     entities:
-    - company_name: "XYZ Corp"
-  - action: utter_ask_work_sector 
+    - company_name: corporation
+  - intent: inform_company_name
+    entities:
+    - company_name: HDN corporation
+  - action: utter_ask_company_work_sector
   - intent: inform_work_sector
     entities:
-    - work_sector: "technology"
-  - action: utter_ask_geographic_segmentation # you can use here lookup tables 
+    - work_sector: Healthcare
+  - action: utter_ask_geographic_segmentation
   - intent: inform_geographic_segmentation
     entities:
-    - geographic_segmentation: "international"
+    - geographic_segmentation: international
   - action: utter_ask_mission_1
+  - intent: ask_plan
   - intent: inform_mission
     entities:
-    - mission_1: Patient Care
-    - mission_1: Treatment
-    - mission_2: Legal Compliance
-  - slot_was_set:
-    - mission_1:  Patient Care
-  - slot_was_set:
-    - mission_2: Treatment 
-  - slot_was_set:
-    - mission_3: Legal Compliance
-  - slot_was_set:
-    - requested_slot: mission_4
-  - action: utter_ask_puprose_2
-  - intent: inform_mission
-  - slot_was_set:
-    - mission_4: Billing
-  - slot_was_set:
-    - requested_slot: mission_5
-  - action: utter_submit_missions_collection_form
-  
-
-
-- story: sad path 1
+    - mission_1: cloud services
+    
+- story: interactive_story_2
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
-
-
-
+  - intent: ask_plan
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: ask_plan
+  - action: utter_plan_explanation
+  - intent: ready
+  - action: utter_PD_Layer_starter
