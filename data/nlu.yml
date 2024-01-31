@@ -112,6 +112,8 @@ nlu:
 
 - intent: inform_mission
   examples: |
+    - the main mission is [Telehealth and Health Research](mission_1)
+    - our mission is [Teleheath](mission_1)
     - our  missions  are [Patient Care and Treatment](mission_1).
     - Our missions  include [Patient Care](mission_1).
     - I would like to inform you about the missions : [Patient Care](mission_1).
