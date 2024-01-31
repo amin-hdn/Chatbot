@@ -176,3 +176,6 @@ stories:
   - intent: inform_want_data_sharing_rec
   - action: utter_Data_Sharing_recomendations
   - action: utter_Data_Layer_finisher
+  - action: utter_User_Interaction_Layer_starter
+  - action: utter_ask_How_Consent
+  - intent: inform_How_Consent

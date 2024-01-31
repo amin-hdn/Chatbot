@@ -18,6 +18,7 @@ intents:
 - inform_why_data_collection
 - inform_why_data_sharing
 - inform_work_sector
+- inform_How_Consent
 - not_ready
 - ready
 entities:
@@ -171,12 +172,33 @@ responses:
   - text: Are you ready to Proceed ?
   utter_Data_Layer_finisher:
   - text: Thank you, so much I'think we finich all question in DATA LAYER
+  utter_User_Interaction_Layer_starter:
+  - text: I want to Let you know that we are in  User Interaction Layer.
+  - text: We are now in the User Interaction Layer.
+
+  utter_ask_How_Consent:
+  - text: How You demand Consent From your Clients.
+  - text: How You Demand Consent From Your Patients.
+  - text: How do you request consent from your clients?
+  - text: What is your approach to obtaining consent from patients?
+  - text: Could you explain your process for seeking consent from clients?
+  
+
+
+
+ 
+
+
+
+
+
   utter_default:
   - text: Sorry I didn't get that. Can you rephrase?
   utter_please_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrasei?
   utter_ask_rephrase:
   - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+
 slots:
   mission_1:
     type: text
@@ -209,3 +231,5 @@ actions:
 - utter_ask_who_Data_Sharing
 - utter_want_Data_Sharing_rec
 - utter_Data_Sharing_recomendations
+- utter_ask_How_Consent
+- utter_User_Interaction_Layer_starter 

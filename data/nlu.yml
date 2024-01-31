@@ -348,3 +348,20 @@ nlu:
     - I'm interested in exploring ways to enhance the security and efficiency of our data sharing practices.
     - Please provide insights and recommendations for improving our data sharing processes.
     - We welcome guidance on best practices for secure and effective data sharing.
+
+  
+- intent: inform_How_Consent
+  examples: |
+    - We request consent through a formal written agreement.
+    - Our approach involves obtaining verbal consent during consultations.
+    - Clients provide consent electronically through our online platform.
+    - We use consent forms that patients sign before any data collection.
+    - Our process includes explaining the purpose and obtaining verbal confirmation.
+    - Patients consent through a dedicated section on our mobile app.
+    - Consent is obtained through a secure online portal with explicit details.
+    - Our approach involves discussing and documenting consent during appointments.
+    - we are using formal written agreement.
+    - we inform our clients that the use of our product is considered as Consent agreement
+    - Our process involves the use of a formal written agreement.
+    - Using our product implies agreement to a formal written consent.
+    - We Don't Demand Consentment, the use of our services implies the Consent agreement
