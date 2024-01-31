@@ -141,18 +141,17 @@ stories:
   - intent: inform_company_name
   - intent: inform_company_name
     entities:
-    - company_name: ENSIAS
+    - company_name: HDN hospital
   - action: utter_ask_company_work_sector
   - intent: inform_work_sector
   - intent: inform_work_sector
     entities:
-    - work_sector: Education
+    - work_sector: Healthcare
   - action: utter_ask_geographic_segmentation
   - intent: inform_geographic_segmentation
     entities:
     - geographic_segmentation: international
   - action: utter_ask_mission_1
-  - intent: inform_mission
   - intent: inform_mission
     entities:
     - mission_1: Telehealth

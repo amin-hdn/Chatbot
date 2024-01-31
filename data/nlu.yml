@@ -119,6 +119,27 @@ nlu:
     - I would like to inform you about the missions : [Patient Care](mission_1).
     - Let me share the missions  with you: [Patient Care](mission_1).
     - our  missions  are [Patient Care](mission_1)
+    - "the main mission is [Telehealth and Health Research](mission_1)"
+    - "our primary mission is [Digital Healthcare Solutions](mission_1)"
+    - "our core mission is [Advancing Medical Technology](mission_1)."
+    - "Our main focus is [Medical Research and Innovation](mission_1)."
+    - "I want to tell you about the mission: [Global Healthcare Improvement](mission_1)."
+    - "Let's discuss the core mission: [Public Health and Wellness](mission_1)."
+    - "Our organization is dedicated to the mission of [Improving Healthcare Accessibility](mission_1)."
+    - "I'd like to share our mission, [Health Education](mission_1)."
+    - "The main purpose is [Empowering Patients through Technology](mission_1)."
+    - "Our key mission area involves [Telemedicine](mission_1)."
+    - "I'd like to brief you on our mission: [Mental Health Support](mission_1)."
+    - "We're committed to the mission of [Enhancing Patient Outcomes](mission_1)."
+    - "Let me update you on our primary mission, [Global Health Initiatives](mission_1)."
+    - "Our organization's central mission revolves around [Healthcare Advancements](mission_1)."
+    - "Our mission covers a wide range, including [Community Health Programs](mission_1)."
+    - "I want to share insights into our mission, with a focus on [Healthcare Technology](mission_1)."
+    - "Our core values align with the mission of [Quality Patient Care](mission_1)."
+    - "Let me outline the mission we're currently undertaking, [Health Equity](mission_1)."
+    - "Our mission encompasses areas like [Preventive Healthcare](mission_1)."
+    - "I'd like to inform you about our mission, emphasizing [Public Health Initiatives](mission_1)."
+
 - intent: bot_challenge
   examples: |
     - are you a bot?
@@ -138,9 +159,56 @@ nlu:
     - The organization gathers data on patient vital signs and medical imaging results.
     - Medical data collection encompasses information about patient insurance and billing details.
     - the type of data collected is Treatment Plans and Personal Information and patient records
+    - We store patient records, diagnoses, and treatments in our system.
+    - Personal info, medical history, and lab results are part of our data collection.
+    - Patient demographics, prescriptions, and vaccination records are in our database.
+    - Our system tracks patient symptoms, tests, and past surgeries.
+    - We record patient allergies, medications, and family medical history.
+    - We gather data on patient lifestyle, habits, and social history.
+    - Patient vital signs and medical imaging results are part of our collection.
+    - Our data collection includes patient insurance and billing details.
+    - We collect Treatment Plans, Personal Information, and patient records.
+    - Our records include info on treatments, patients, and medical history.
+    - Patient data involves treatments, personal info, and medical records.
+    - We gather details about treatments, personal info, and patient history.
+    - Our system records patient treatments, personal data, and medical history.
+    - Patient records encompass treatments, personal info, and medical data.
+    - We document treatments, personal info, and medical records.:
+    - We store info about treatments, personal data, and patient medical history.
+    - Our database contains patient records, personal info, and treatment plans.
+    - We track patient treatments, personal details, and medical history.
+    - We gather data on treatments, personal info, and patient records.
+    - Our system collects info about treatments, personal data, and patient history.
+    - We store patient records.
+    - Personal information, like names and contact details, is securely managed.
+    - Lab results, including blood tests and screenings, are recorded systematically.
+    - Patient demographics, such as age and gender, are part of our comprehensive data.
+    - Prescription details, outlining medications and dosages, are meticulously logged.
+    - Vaccination records, tracking immunizations, contribute to our medical database.
+    - Patient symptoms, like pain or discomfort, are carefully documented.
+    - Medical tests, covering screenings and diagnostic procedures, are systematically captured.
+    - Past surgeries, providing insights into patient history, are part of our records.
+    - Allergies, from food to environmental sensitivities, are diligently recorded.
+    - Current medications, including dosage and frequency, are part of our dataset.
+    - Family medical history, understanding genetic factors, is documented for each patient.
+    - Lifestyle information, capturing habits and routines, aids in holistic patient care.
+    - Patient habits, such as exercise and diet, are documented 
+    - Social history, including relationships and living conditions, is part of our patient profiles.
+    - Vital signs, like heart rate and blood pressure, are routinely monitored and recorded.
+    - Medical imaging results, such as X-rays and scans, contribute to our diagnostic data.
+    - Information related to patient insurance
+    - Billing details, including invoices and payment records, are part of our data collection.
+    - Treatment plans are recorded.
+    - Diagnostic Data are stored.
+    - we store Diagnostic Data.
+    - Diagnostic Data are stored.
+
+
 
 - intent: inform_why_data_collection
   examples: |
+    - We collect For Diagnostic Data to survey the patient.
+    - We collect to ensure the health status of the patient.
     - We collect medical data for the purpose of enhancing patient care and supporting medical research initiatives.
     - The primary goal of our data collection is to improve healthcare management and ensure regulatory compliance.
     - Data collection contributes to the development of personalized treatment plans for patients.
@@ -149,6 +217,20 @@ nlu:
     - Our organization gathers data to improve the overall efficiency of healthcare services.
     - Supporting clinical decision-making processes is a crucial aspect of our medical data collection.
     - The organization collects data to facilitate early detection of potential health risks.
+    - Collecting Diagnostic Data helps us understand and assess patient conditions.
+    - Ensuring patient health status through comprehensive data collection is a priority.
+    - Our data collection aims to contribute valuable insights to medical research.
+    - Personalized treatment plans are developed based on collected medical data.
+    - Efficient healthcare management and regulatory compliance drive our data collection efforts.
+    - Analyzing disease trends supports our contribution to public health research.
+    - Improving diagnostic accuracy and treatment effectiveness guides our data collection goals.
+    - Enhancing overall healthcare service efficiency is a key motivation for data collection.
+    - Our medical data collection supports crucial clinical decision-making processes.
+    - Early detection of potential health risks is facilitated through our data collection practices.
+    - Comprehensive data collection aids in surveying patients for better healthcare outcomes.
+    - We collect information to improve patient care and contribute to scientific advancements.
+    - Supporting medical research and advancing patient care are primary objectives of data collection.
+    - Our data collection efforts aim to enhance the quality and effectiveness of healthcare services.
 
 - intent: inform_how_data_collection
   examples: |
@@ -164,6 +246,29 @@ nlu:
     - Health monitoring devices and sensors play a significant role in our data collection process.
     - Patient portals are used to facilitate self-reporting and engagement in data collection.
     - Our organization employs natural language processing for extracting insights from clinical notes.
+    - EHR and patient interviews are primary data collection methods.
+    - Wearable devices and EHR contribute to our data collection.
+    - Surveys and wearables play a role in our data gathering.
+    - Mobile health apps enhance our data collection process.
+    - Telemedicine platforms support remote data collection efforts.
+    - Health monitoring devices aid in efficient data gathering.
+    - Patient portals facilitate self-reporting for data collection.
+    - NLP extracts insights from clinical notes in our data collection.
+    - We use wearable devices and EHR for comprehensive data capture.
+    - Efficient data gathering through surveys and wearables.
+    - Telemedicine and wearables ensure remote data collection.
+    - Smart devices contribute to our streamlined data collection.
+    - NLP extracts valuable information from clinical notes.
+    - Wearables and patient self-reports enhance our data collection.i
+    - Using EHR and patient interviews, we collect essential medical data.
+    - We use wearables and EHR to ensure comprehensive data capture.
+    - Data collection is facilitated using surveys and wearable devices.
+    - We use electronic forms and patient self-reports for efficient gathering.
+    - Mobile health apps and smart devices are utilized for data collection.
+    - Telemedicine platforms are employed for remote data collection using video consultations.
+    - Health monitoring devices and sensors play a key role in our data collection.
+    - Using patient portals, we encourage self-reporting for streamlined data collection.
+
 
 - intent: inform_retention_data_collection
   examples: |
@@ -187,6 +292,10 @@ nlu:
     - Legal requirements dictate long-term data preservation.
     - Client data is held temporarily for transaction purposes.
     - Essential information is retained for a short duration.
+    - it is retained for short duration.
+    - it is retained for months
+    - we reatain data for long term 
+
 
 
 - intent: inform_want_data_collection_rec
@@ -199,6 +308,10 @@ nlu:
     - I'm interested in exploring ways to enhance the efficiency of our data collection efforts.
     - Please provide insights and recommendations for improving our data collection practices.
     - We welcome guidance on best practices for collecting and managing medical data.
+    - give recommendations.
+    - I would like to know your recommendation 
+    - I would appreciate Guidance
+    - give recommendation about Data collection 
 
 - intent: inform_why_data_sharing
   examples: |
