@@ -150,6 +150,9 @@ nlu:
 
 - intent: inform_what_data_collection
   examples: |
+    - we collect Diagnostic Data 
+    - the type of data we collect is Treatment information 
+    - the type of data we collect is Diagnostic Data 
     - Our organization collects medical data such as patient records, diagnostic information, and treatment plans.
     - We gather Personal Information, Medical History, and Lab Results as part of our data collection process.
     - The data collected includes patient demographics, prescription details, and vaccination records.
