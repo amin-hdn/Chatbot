@@ -135,6 +135,7 @@ nlu:
     - Data collection involves capturing information about patient lifestyle, habits, and social history.
     - The organization gathers data on patient vital signs and medical imaging results.
     - Medical data collection encompasses information about patient insurance and billing details.
+    - the type of data collected is Treatment Plans and Personal Information and patient records
 
 - intent: inform_why_data_collection
   examples: |

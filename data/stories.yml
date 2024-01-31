@@ -130,3 +130,50 @@ stories:
 
   - action: utter_Data_Layer_finisher
 
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ready
+  - action: utter_PD_Layer_starter
+  - action: utter_ask_company_name
+  - intent: inform_company_name
+  - intent: inform_company_name
+    entities:
+    - company_name: ENSIAS
+  - action: utter_ask_company_work_sector
+  - intent: inform_work_sector
+  - intent: inform_work_sector
+    entities:
+    - work_sector: Education
+  - action: utter_ask_geographic_segmentation
+  - intent: inform_geographic_segmentation
+    entities:
+    - geographic_segmentation: international
+  - action: utter_ask_mission_1
+  - intent: inform_mission
+  - intent: inform_mission
+    entities:
+    - mission_1: Telehealth
+  - action: utter_PD_Layer_finisher
+  - action: utter_Data_Layer_starter
+  - action: utter_ask_what_Data_Collection
+  - intent: inform_what_data_collection
+  - action: utter_ask_why_Data_Collection
+  - intent: inform_why_data_collection
+  - action: utter_ask_how_Data_Collection
+  - intent: inform_how_data_collection
+  - action: utter_ask_retention_Data_Collection
+  - intent: inform_retention_data_collection
+  - action: utter_want_Data_Collection_rec
+  - intent: inform_want_data_collection_rec
+  - action: utter_Data_Collection_recommendations
+  - action: utter_ask_why_Data_Sharing
+  - intent: inform_why_data_sharing
+  - action: utter_ask_who_Data_Sharing
+  - intent: inform_who_data_sharing
+  - action: utter_want_Data_Sharing_rec
+  - intent: inform_want_data_sharing_rec
+  - action: utter_Data_Sharing_recomendations
+  - action: utter_Data_Layer_finisher

@@ -1,5 +1,4 @@
 version: '3.1'
-
 intents:
 - affirm
 - ask_plan
@@ -9,164 +8,175 @@ intents:
 - greet
 - inform_company_name
 - inform_geographic_segmentation
+- inform_how_data_collection
 - inform_mission
+- inform_retention_data_collection
+- inform_want_data_collection_rec
+- inform_want_data_sharing_rec
+- inform_what_data_collection
+- inform_who_data_sharing
+- inform_why_data_collection
+- inform_why_data_sharing
 - inform_work_sector
 - not_ready
 - ready
-- inform_what_data_collection
-- inform_why_data_collection
-- inform_how_data_collection
-- inform_retention_data_collection
-- inform_want_data_collection_rec
-- inform_why_data_sharing
-- inform_who_data_sharing
-- inform_want_data_sharing_rec
 entities:
-- company_name
 - mission_1
 - work_sector
+- company_name
 - geographic_segmentation
 responses:
   utter_greet:
-    - text: Hey! How can I help you ?
-
+  - text: Hey! How can I help you ?
   utter_plan_explanation:
-    - text: |
-        Sure, we will cover subject in term of layers, here is the plan for our conversation:
-        - Policy Definition Layer : general information
-        - Data Layer :  discuss many aspects of Data collection/sharing/retention
-        - User interation Layer : user access and user control aspect
-        - Security & compliance Layer : this is clear i think.
+  - text: |
+      Sure, we will cover subject in term of layers, here is the plan for our conversation:
+      - Policy Definition Layer : general information
+      - Data Layer :  discuss many aspects of Data collection/sharing/retention
+      - User interation Layer : user access and user control aspect
+      - Security & compliance Layer : this is clear i think.
   utter_goodbye:
-    - text: Bye
+  - text: Bye
   utter_not_ready:
-    - text: That's completely fine! Take your time, and we can continue when you're ready.
-    - text: No problem at all. Whenever you're ready, feel free to let me know, and we can pick up from where we left off.
-    - text: Sure, no rush. If there's anything specific on your mind or when you're ready to continue, just give me a shout.
-    - text: Sure take your time.
-    - text: OK, I'm waiting for you
+  - text: That's completely fine! Take your time, and we can continue when you're ready.
+  - text: No problem at all. Whenever you're ready, feel free to let me know, and we can pick up from where we left off.
+  - text: Sure, no rush. If there's anything specific on your mind or when you're ready to continue, just give me a shout.
+  - text: Sure take your time.
+  - text: OK, I'm waiting for you
   utter_iamabot:
-    - text: I am a bot, powered by Rasa.
+  - text: I am a bot, powered by Rasa.
   utter_PD_Layer_starter:
-    - text: I want to Let you know that we are in Policy Definition.
-    - text: We are now in the Policy defintion Layer
+  - text: I want to Let you know that we are in Policy Definition.
+  - text: We are now in the Policy defintion Layer
   utter_ask_company_name:
-    - text: What is the name of your company?
-    - text: Could you please provide the name of your company?
-    - text: I'd like to know the name of your company, please.
-    - text: To proceed, could you share the name of your company with us?
-    - text: For our records, what is the name of your company?
-    - text: We'd appreciate it if you could tell us the name of your company.
-    - text: Please enter the name of your company.
-    - text: What's the name of the company you represent?
+  - text: What is the name of your company?
+  - text: Could you please provide the name of your company?
+  - text: I'd like to know the name of your company, please.
+  - text: To proceed, could you share the name of your company with us?
+  - text: For our records, what is the name of your company?
+  - text: We'd appreciate it if you could tell us the name of your company.
+  - text: Please enter the name of your company.
+  - text: What's the name of the company you represent?
   utter_ask_company_work_sector:
-    - text: What is the domain of your company?
-    - text: Could you tell me the industry or sector your company operates in?
-    - text: To better understand your company, may I ask about the industry you are in?
-    - text: What sector does your company specialize in?
-    - text: For our records, please provide information about the industry your company operates in.
-    - text: I'd like to learn more about the sector in which your company works. Could you share that with me?
-    - text: To assist you better, could you specify the domain or industry of your company?
-    - text: May I ask about the sector or industry your company falls under?
+  - text: What is the domain of your company?
+  - text: Could you tell me the industry or sector your company operates in?
+  - text: To better understand your company, may I ask about the industry you are in?
+  - text: What sector does your company specialize in?
+  - text: For our records, please provide information about the industry your company operates in.
+  - text: I'd like to learn more about the sector in which your company works. Could you share that with me?
+  - text: To assist you better, could you specify the domain or industry of your company?
+  - text: May I ask about the sector or industry your company falls under?
   utter_ask_geographic_segmentation:
-    - text: Is your company international, national, or regional?
-    - text: Could you specify if your company operates at an international, national, or regional level?
-    - text: To better understand your company's scope, please let me know if it is international, national, or regional.
+  - text: Is your company international, national, or regional?
+  - text: Could you specify if your company operates at an international, national, or regional level?
+  - text: To better understand your company's scope, please let me know if it is international, national, or regional.
   utter_PD_Layer_finisher:
-    - text: "Thank you, so much I'think we finich all question in PD LAYER"
-
+  - text: Thank you, so much I'think we finich all question in PD LAYER
   utter_ask_mission_1:
-    - text: "What is the main mission in general?
-        here is some exemples :\n
-        - Patient Care and Treatment\n
-        - Appointment Scheduling and Communication\n
-        - Insurance Processing\n
-        - Billing\n
-        - Health Research\n
-        - Quality Improvement \n
-        - Telehealth\n
-        - Remote Monitoring"
+  - text: |-
+      What is the main mission in general? here is some exemples :
+       - Patient Care and Treatment
+       - Appointment Scheduling and Communication
+       - Insurance Processing
+       - Billing
+       - Health Research
+       - Quality Improvement 
+       - Telehealth
+       - Remote Monitoring
   utter_ask_what_Data_Collection:
-    - text: "Medical data can encompass various types, including Personal Information, Medical History, Diagnostic Data, Treatment Plans, Lab Results, and Billing Information.\n
-        In order to assist you better, could you please specify the types of data you collect in the medical field?"
-    - text: "Medical data can encompass various types, including Personal Information, Medical History, Diagnostic Data, Treatment Plans, Lab Results, and Billing Information.\n
-        For better assistance, could you specify the types of data collected by your organization?"
-    - text: "Medical data can encompass various types, including Personal Information, Medical History, Diagnostic Data, Treatment Plans, Lab Results, and Billing Information.\n
-        In order to improve our conversation, could you elaborate on the types of medical data you're collecting?"
-    - text: "Medical data can encompass various types, including Personal Information, Medical History, Diagnostic Data, Treatment Plans, Lab Results, and Billing Information.\n
-        Could you share more about the specific types of data you collect?"
-    - text: "Medical data can encompass various types, including Personal Information, Medical History, Diagnostic Data, Treatment Plans, Lab Results, and Billing Information.\n
-        Could you please outline the types of data being collected within the medical context?"
-
+  - text: |-
+      Medical data can encompass various types, including Personal Information, Medical History, Diagnostic Data, Treatment Plans, Lab Results, and Billing Information.
+       In order to assist you better, could you please specify the types of data you collect in the medical field?
+  - text: |-
+      Medical data can encompass various types, including Personal Information, Medical History, Diagnostic Data, Treatment Plans, Lab Results, and Billing Information.
+       For better assistance, could you specify the types of data collected by your organization?
+  - text: |-
+      Medical data can encompass various types, including Personal Information, Medical History, Diagnostic Data, Treatment Plans, Lab Results, and Billing Information.
+       In order to improve our conversation, could you elaborate on the types of medical data you're collecting?
+  - text: |-
+      Medical data can encompass various types, including Personal Information, Medical History, Diagnostic Data, Treatment Plans, Lab Results, and Billing Information.
+       Could you share more about the specific types of data you collect?
+  - text: |-
+      Medical data can encompass various types, including Personal Information, Medical History, Diagnostic Data, Treatment Plans, Lab Results, and Billing Information.
+       Could you please outline the types of data being collected within the medical context?
   utter_ask_why_Data_Collection:
-    - text: "Medical data can be collected for a variety of reasons: Treatment Planning, Medical Research, Healthcare Management, Regulatory Compliance, Personalized Care.\n
-        Next, could you kindly explain the reasons your organization collects patient data?"
-    - text: "Medical data can be collected for a variety of reasons: Treatment Planning, Medical Research, Healthcare Management, Regulatory Compliance, Personalized Care.\n
-        Let's continue, could you elucidate the purposes behind collecting patient data?"
-    - text: "Medical data can be collected for a variety of reasons: Treatment Planning, Medical Research, Healthcare Management, Regulatory Compliance, Personalized Care.\n
-        Could you share the reasons for collecting data on patients?"
-    - text: "Medical data can be collected for a variety of reasons: Treatment Planning, Medical Research, Healthcare Management, Regulatory Compliance, Personalized Care.\n
-        Could you provide insights into the reasons for gathering patient data?"
-
+  - text: |-
+      Medical data can be collected for a variety of reasons: Treatment Planning, Medical Research, Healthcare Management, Regulatory Compliance, Personalized Care.
+       Next, could you kindly explain the reasons your organization collects patient data?
+  - text: |-
+      Medical data can be collected for a variety of reasons: Treatment Planning, Medical Research, Healthcare Management, Regulatory Compliance, Personalized Care.
+       Let's continue, could you elucidate the purposes behind collecting patient data?
+  - text: |-
+      Medical data can be collected for a variety of reasons: Treatment Planning, Medical Research, Healthcare Management, Regulatory Compliance, Personalized Care.
+       Could you share the reasons for collecting data on patients?
+  - text: |-
+      Medical data can be collected for a variety of reasons: Treatment Planning, Medical Research, Healthcare Management, Regulatory Compliance, Personalized Care.
+       Could you provide insights into the reasons for gathering patient data?
   utter_ask_how_Data_Collection:
-    - text: "Medical data can be collected through various means, including Electronic Health Records (EHR), Paper Forms, Surveys, Wearable Devices, and Patient Interviews.\n
-        How do you collect the medical data?"
-    - text: "Medical data can be collected through various means, including Electronic Health Records (EHR), Paper Forms, Surveys, Wearable Devices, and Patient Interviews.\n
-        As we proceed, could you share details on the methods you use to collect medical data?"
-    - text: "Medical data can be collected through various means, including Electronic Health Records (EHR), Paper Forms, Surveys, Wearable Devices, and Patient Interviews.\n
-        Moving forward, could you elaborate on the procedures employed for collecting medical data?"
-    - text: "Medical data can be collected through various means, including Electronic Health Records (EHR), Paper Forms, Surveys, Wearable Devices, and Patient Interviews.\n
-        For the upcoming" 
+  - text: |-
+      Medical data can be collected through various means, including Electronic Health Records (EHR), Paper Forms, Surveys, Wearable Devices, and Patient Interviews.
+       How do you collect the medical data?
+  - text: |-
+      Medical data can be collected through various means, including Electronic Health Records (EHR), Paper Forms, Surveys, Wearable Devices, and Patient Interviews.
+       As we proceed, could you share details on the methods you use to collect medical data?
+  - text: |-
+      Medical data can be collected through various means, including Electronic Health Records (EHR), Paper Forms, Surveys, Wearable Devices, and Patient Interviews.
+       Moving forward, could you elaborate on the procedures employed for collecting medical data?
+  - text: |-
+      Medical data can be collected through various means, including Electronic Health Records (EHR), Paper Forms, Surveys, Wearable Devices, and Patient Interviews.
+       For the upcoming
   utter_ask_retention_Data_Collection:
-    - text: "We generally categorize our retention periods as temporary, short-term, long-term, or indefinite.
-        What is the usual retention period for medical data within your organization?"
-
+  - text: We generally categorize our retention periods as temporary, short-term, long-term, or indefinite. What is the usual retention period for medical data within your organization?
   utter_want_Data_Collection_rec:
-    - text: "Are you interested in receiving suggestions on how to improve your data collection practices?"
-    - text: "Would you appreciate some guidance on optimizing your approach to data collection?"
-    - text: "Are you open to receiving recommendations that can enhance your data collection methods?"
-    - text: "Would you find it helpful to receive advice on improving your strategies for data collection?"
-    - text: "Are you open to suggestions for refining your data collection processes?"
-
+  - text: Are you interested in receiving suggestions on how to improve your data collection practices?
+  - text: Would you appreciate some guidance on optimizing your approach to data collection?
+  - text: Are you open to receiving recommendations that can enhance your data collection methods?
+  - text: Would you find it helpful to receive advice on improving your strategies for data collection?
+  - text: Are you open to suggestions for refining your data collection processes?
   utter_Data_Collection_recommendations:
-    - text: |
-        - Prioritize Data Minimization and only collect the data that is necessary for the intended purpose. Avoid gathering excessive or irrelevant information.
-        - Whenever possible, use techniques like anonymization or pseudonymization to protect individual identities within the collected data.
-        - Document the procedures and methods used for data collection to facilitate transparency and ensure that the process can be replicated or audited.
-        - Stay informed about advancements in data collection methods and technologies, and update your processes accordingly to stay current.
-
+  - text: |
+      - Prioritize Data Minimization and only collect the data that is necessary for the intended purpose. Avoid gathering excessive or irrelevant information.
+      - Whenever possible, use techniques like anonymization or pseudonymization to protect individual identities within the collected data.
+      - Document the procedures and methods used for data collection to facilitate transparency and ensure that the process can be replicated or audited.
+      - Stay informed about advancements in data collection methods and technologies, and update your processes accordingly to stay current.
   utter_ask_why_Data_Sharing:
-    - text: "Data sharing serves diverse purposes, including facilitating patient care collaboration, contributing to medical research initiatives, and supporting partnerships with third-party vendors.\n
-        Could you elaborate on the specific purposes for which your organization shares medical data externally?"
-    - text: "Data sharing serves diverse purposes, including facilitating patient care collaboration, contributing to medical research initiatives, and supporting partnerships with third-party vendors.\n
-        What are the primary objectives guiding your organization's data sharing practices?"
-
+  - text: |-
+      Data sharing serves diverse purposes, including facilitating patient care collaboration, contributing to medical research initiatives, and supporting partnerships with third-party vendors.
+       Could you elaborate on the specific purposes for which your organization shares medical data externally?
+  - text: |-
+      Data sharing serves diverse purposes, including facilitating patient care collaboration, contributing to medical research initiatives, and supporting partnerships with third-party vendors.
+       What are the primary objectives guiding your organization's data sharing practices?
   utter_ask_who_Data_Sharing:
-    - text: "Some organisations share medical data with trusted entities, including healthcare providers, research institutions, and occasionally with third-party vendors for specific services.\n
-      Could you provide insights into the entities or organizations with whom your organization typically shares medical data externally?"
-    - text: "Some organisations share medical data with trusted entities, including healthcare providers, research institutions, and occasionally with third-party vendors for specific services.\n
-      Who are the primary collaborators or recipients of shared medical data, and how does this align with your organization's strategic goals?"
-
+  - text: |-
+      Some organisations share medical data with trusted entities, including healthcare providers, research institutions, and occasionally with third-party vendors for specific services.
+       Could you provide insights into the entities or organizations with whom your organization typically shares medical data externally?
+  - text: |-
+      Some organisations share medical data with trusted entities, including healthcare providers, research institutions, and occasionally with third-party vendors for specific services.
+       Who are the primary collaborators or recipients of shared medical data, and how does this align with your organization's strategic goals?
   utter_want_Data_Sharing_rec:
-    - text: "Are you interested in receiving suggestions on how to improve your data sharing practices?"
-    - text: "Would you appreciate some guidance on optimizing your approach to data sharing?"
-    - text: "Are you open to receiving recommendations that can enhance your data sharing methods?"
-    - text: "Would you find it helpful to receive advice on improving your strategies for data sharing?"
-    - text: "Are you open to suggestions for refining your data sharing processes?"
-
+  - text: Are you interested in receiving suggestions on how to improve your data sharing practices?
+  - text: Would you appreciate some guidance on optimizing your approach to data sharing?
+  - text: Are you open to receiving recommendations that can enhance your data sharing methods?
+  - text: Would you find it helpful to receive advice on improving your strategies for data sharing?
+  - text: Are you open to suggestions for refining your data sharing processes?
   utter_Data_Sharing_recomendations:
-    - text: |
-        - Implement Strong Access Controls to ensure that only authorized individuals or entities have access to shared medical data. Implement role-based access controls and encryption to safeguard sensitive information.
-        - Use Secure Communication Protocols when transferring medical data. Use industry-standard encryption methods to protect data integrity and confidentiality during transmission.
-        - Define clear and comprehensive data sharing agreements with external entities. Clearly outline the purpose, scope, and limitations of data sharing to avoid misunderstandings and ensure compliance with privacy regulations.
+  - text: |
+      - Implement Strong Access Controls to ensure that only authorized individuals or entities have access to shared medical data. Implement role-based access controls and encryption to safeguard sensitive information.
+      - Use Secure Communication Protocols when transferring medical data. Use industry-standard encryption methods to protect data integrity and confidentiality during transmission.
+      - Define clear and comprehensive data sharing agreements with external entities. Clearly outline the purpose, scope, and limitations of data sharing to avoid misunderstandings and ensure compliance with privacy regulations.
   utter_Data_Layer_starter:
-    - text: I want to Let you know that we are in Policy Definition.
-    - text: We are now in the Policy defintion Layer
+  - text: I want to Let you know that we are in  Data Layer.
+  - text: We are now in the Data Layer
   utter_are_you_ready:
-    - text: Are you ready to Proceed ?
- 
+  - text: Are you ready to Proceed ?
   utter_Data_Layer_finisher:
-    - text: "Thank you, so much I'think we finich all question in DATA LAYER"
+  - text: Thank you, so much I'think we finich all question in DATA LAYER
+  utter_default:
+  - text: Sorry I didn't get that. Can you rephrase?
+  utter_please_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrasei?
+  utter_ask_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
 slots:
   mission_1:
     type: text
@@ -178,22 +188,18 @@ slots:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-
-
-
-
-
 actions:
-- utter_greet
-- utter_iamabot
-- utter_ask_company_work_sector
-- utter_PD_Layer_starter
-- utter_ask_company_name
-- utter_ask_geographic_segmentation
-- utter_ask_mission_1
-- utter_PD_Layer_finisher
-- utter_ask_what_Data_Collection
 - utter_ask_why_Data_Collection
+- utter_greet
+- utter_Data_Layer_starter
+- utter_ask_company_work_sector
+- utter_ask_mission_1
+- utter_ask_geographic_segmentation
+- utter_PD_Layer_finisher
+- utter_ask_company_name
+- utter_ask_what_Data_Collection
+- utter_PD_Layer_starter
+- utter_iamabot
 - utter_ask_how_Data_Collection
 - utter_ask_retention_Data_Collection
 - utter_want_Data_Collection_rec
