@@ -153,6 +153,10 @@ nlu:
 - intent: inform_how_data_collection
   examples: |
     - Medical data is collected through Electronic Health Records (EHR) and patient interviews in our organization.
+    - Our Data is collected through Electronic Health Records (EHR) and Wearable Devices, 
+    - we collect data through wearable Devicces
+    - through wearable devices and Electronic Health Records 
+    - to collect Data, we are using wearable Devices and Electronic Heath Recods
     - We use surveys and wearable devices as part of our data collection methods.
     - Electronic forms and patient self-reports are employed for efficient medical data gathering.
     - Data collection involves the use of mobile health apps and smart devices.
