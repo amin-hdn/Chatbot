@@ -16,4 +16,8 @@ rules:
   steps:
   - intent: not_ready
   - action: utter_not_ready
-    
+- rule: Read ask planification of the conversation 
+  steps:
+  - intent: ask_plan
+  - action: utter_plan_explanation
+  - action: utter_are_you_ready

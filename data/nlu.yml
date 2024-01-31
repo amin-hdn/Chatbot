@@ -109,12 +109,7 @@ nlu:
     - Our company operates at the [national](geographic_segmentation) level.
     - [reginal](geographic_segmentation) is our focus.
     - We work on both [national](geographic_segmentation) and [regional](geographic_segmentation) scales.
-- intent: Want_Tell_mission
-  examples: |
-    - I'd like to share my missions.
-    - Can I tell you about my missions?
-    - I want to provide information about my missions.
-    - Ready to share my missions with you.
+
 - intent: inform_mission
   examples: |
     - our  missions  are [Patient Care and Treatment](mission_1).
@@ -129,3 +124,104 @@ nlu:
     - am I talking to a bot?
     - am I talking to a human?
     - what are you?
+
+- intent: inform_what_data_collection
+  examples: |
+    - Our organization collects medical data such as patient records, diagnostic information, and treatment plans.
+    - We gather Personal Information, Medical History, and Lab Results as part of our data collection process.
+    - The data collected includes patient demographics, prescription details, and vaccination records.
+    - Our system collects data related to patient symptoms, medical tests, and past surgeries.
+    - We capture information about patient allergies, current medications, and family medical history.
+    - Data collection involves capturing information about patient lifestyle, habits, and social history.
+    - The organization gathers data on patient vital signs and medical imaging results.
+    - Medical data collection encompasses information about patient insurance and billing details.
+
+- intent: inform_why_data_collection
+  examples: |
+    - We collect medical data for the purpose of enhancing patient care and supporting medical research initiatives.
+    - The primary goal of our data collection is to improve healthcare management and ensure regulatory compliance.
+    - Data collection contributes to the development of personalized treatment plans for patients.
+    - We collect medical data to analyze disease trends and contribute to public health research.
+    - Enhancing diagnostic accuracy and treatment effectiveness is a key objective of our data collection.
+    - Our organization gathers data to improve the overall efficiency of healthcare services.
+    - Supporting clinical decision-making processes is a crucial aspect of our medical data collection.
+    - The organization collects data to facilitate early detection of potential health risks.
+
+- intent: inform_how_data_collection
+  examples: |
+    - Medical data is collected through Electronic Health Records (EHR) and patient interviews in our organization.
+    - We use surveys and wearable devices as part of our data collection methods.
+    - Electronic forms and patient self-reports are employed for efficient medical data gathering.
+    - Data collection involves the use of mobile health apps and smart devices.
+    - Our organization utilizes telemedicine platforms for remote data collection from patients.
+    - Health monitoring devices and sensors play a significant role in our data collection process.
+    - Patient portals are used to facilitate self-reporting and engagement in data collection.
+    - Our organization employs natural language processing for extracting insights from clinical notes.
+
+- intent: inform_retention_data_collection
+  examples: |
+    - Our organization retains medical data based on predefined categories like Temporary, short-term, or long-term.
+    - The usual retention period for medical data is determined by the nature and purpose of the collected information, often categorized as Temporary.
+    - Retention periods are defined considering legal requirements and ethical considerations, with a focus on short-term storage.
+    - Data retention policies are aligned with industry standards and privacy regulations, emphasizing long-term preservation.
+    - Temporary data is retained for a specific project, while long-term data may be stored for research purposes.
+    - The organization reviews and updates data retention policies to ensure compliance with Temporary storage needs.
+    - Retention decisions consider the sensitivity and criticality of the collected medical information, prioritizing short-term storage.
+    - Data retention practices are documented and communicated to relevant stakeholders, highlighting long-term preservation.
+    - We retain our client data on a Temporary basis.
+    - We retain our client data for short-term storage.
+    - Data is kept temporarily for immediate analysis.
+    - Short-term retention ensures compliance with regulations.
+    - Long-term storage supports ongoing research efforts.
+    - We retain information briefly for specific projects.
+    - Temporary storage aligns with ethical considerations.
+    - The organization updates retention policies regularly.
+    - Sensitivity guides short-term data retention decisions.
+    - Legal requirements dictate long-term data preservation.
+    - Client data is held temporarily for transaction purposes.
+    - Essential information is retained for a short duration.
+
+
+- intent: inform_want_data_collection_rec
+  examples: |
+    - Yes, I'm interested in receiving suggestions on how to improve our data collection practices.
+    - I would appreciate guidance on optimizing our approach to data collection.
+    - Absolutely, I'm open to recommendations for enhancing our data collection methods.
+    - I'm eager to receive advice on improving our strategies for data collection.
+    - Yes, we are open to suggestions for refining our data collection processes.
+    - I'm interested in exploring ways to enhance the efficiency of our data collection efforts.
+    - Please provide insights and recommendations for improving our data collection practices.
+    - We welcome guidance on best practices for collecting and managing medical data.
+
+- intent: inform_why_data_sharing
+  examples: |
+    - Our organization shares medical data externally to contribute to medical research and enhance patient care collaboration.
+    - Data sharing supports partnerships with third-party vendors and aligns with our strategic goals.
+    - Sharing medical data facilitates collaboration with healthcare providers for improved patient outcomes.
+    - We engage in data sharing to contribute valuable insights to the broader medical community.
+    - External data sharing is essential for participating in industry-wide healthcare initiatives.
+    - Our organization shares data to support population health management and epidemiological studies.
+    - Data sharing with research institutions helps advance scientific understanding in the medical field.
+    - External collaboration through data sharing enhances our ability to provide personalized care.
+
+- intent: inform_who_data_sharing
+  examples: |
+    - We share medical data with trusted entities such as healthcare providers, research institutions, and third-party vendors.
+    - Primary collaborators for data sharing include organizations involved in medical research and patient care.
+    - Data sharing extends to strategic partnerships with pharmaceutical companies for clinical trials.
+    - Our organization collaborates with academic institutions for research-driven data sharing.
+    - Third-party vendors involved in medical equipment and technology may receive shared data.
+    - Collaborative arrangements with telehealth providers involve data sharing for remote patient monitoring.
+    - Strategic alliances with healthcare networks involve reciprocal data sharing practices.
+    - Data sharing partnerships may include government health agencies for public health initiatives.
+
+- intent: inform_want_data_sharing_rec
+  examples: |
+    - Yes, I'm interested in receiving suggestions on how to improve our data sharing practices.
+    - I would like advice on optimizing our strategies for data sharing.
+    - We are open to recommendations for enhancing our data sharing methods.
+    - I'm eager to receive advice on improving our approaches to data sharing.
+    - Yes, we are open to suggestions for refining our data sharing processes.
+    - I'm interested in exploring ways to enhance the security and efficiency of our data sharing practices.
+    - Please provide insights and recommendations for improving our data sharing processes.
+    - We welcome guidance on best practices for secure and effective data sharing.
