@@ -97,8 +97,10 @@ stories:
 
 - story : Regulation Conversation
   steps:
+  - action: utter_Sec_Comp_Layer_starter
   - action: utter_ask_regulation
   - intent: inform_privacy_regulation
+  - action: utter_Sec_Comp_Layer_finisher
 
 - story: the hole conversation 
   steps:

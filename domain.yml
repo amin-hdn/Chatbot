@@ -21,7 +21,7 @@ intents:
 - inform_How_Consent
 - inform_user_rights_priority
 - inform_privacy_regulation
-# - inform_default_opt_in_out_settings
+- inform_default_opt_in_out_settings
 - not_ready
 - ready
 entities:
@@ -221,9 +221,14 @@ responses:
   utter_Sec_Comp_Layer_finisher:
     - text: "Thank you, so much I'think we finich all question in security & compliance Layer\n"
 
+
   utter_ask_regulation:
     - text: "Privacy policies must adhere to relevant regulations, whether international or national.
              Here is a list of well-known regulations that privacy policies often align with:\n\n- General Data Protection Regulation (GDPR)\n- California Consumer Privacy Act (CCPA)\n- Health Insurance Portability and Accountability Act (HIPAA)\n- Personal Information Protection and Electronic Documents Act (PIPEDA)\n- Children's Online Privacy Protection Act (COPPA)\n- Brazilian General Data Protection Law (LGPD)\n- Personal Data Protection Act (PDPA)\n- Privacy Act of 1974 (United States)\n- Australia Privacy Act 1988\n\nCould you specify which regulation your privacy policy adheres to?"
+
+  utter_Sec_Comp_Layer_starter:
+  - text: I want to Let you know that we are in the Security and Compliance Layer.
+  - text: We are now in the Security and Compliance Layer
 
   
 
@@ -281,3 +286,7 @@ actions:
 - utter_ask_User_Right
 - utter_User_Interaction_Layer_starter 
 - utter_User_Interaction_Layer_finisher 
+- utter_Sec_Comp_Layer_starter
+- utter_Sec_Comp_Layer_finisher
+- utter_ask_regulation
+- 
