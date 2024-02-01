@@ -19,6 +19,9 @@ intents:
 - inform_why_data_sharing
 - inform_work_sector
 - inform_How_Consent
+- inform_user_rights_priority
+- inform_privacy_regulation
+# - inform_default_opt_in_out_settings
 - not_ready
 - ready
 entities:
@@ -182,6 +185,46 @@ responses:
   - text: How do you request consent from your clients?
   - text: What is your approach to obtaining consent from patients?
   - text: Could you explain your process for seeking consent from clients?
+
+  utter_ask_data_collection_preferences:
+    - text: Can users set their data collection preferences right at the beginning of their interaction with the system?
+    - text: Is there an option for users to establish their data preferences in the initial stages of their interaction with the system?
+    - text: Is there an opportunity for users to define their data collection preferences early on, before extensively engaging with features?
+  utter_ask_exclude_data_preferences:
+    - text: Can users specify particular data points or categories they want to be excluded from collection?
+    - text: Do users have the ability to specify and exclude certain data points from being collected?
+    - text: Is there a feature that allows users to selectively exclude specific data categories from the collection process?
+    - text: Can users customize their preferences by indicating specific data points or categories they do not want to be collected?
+    - text: Is there granularity in the user control, allowing them to designate specific types of data they prefer not to be collected?
+  utter_ask_default_opt_in_out_settings:
+    - text: Are there default settings for data collection, and if so, do they lean towards opt-in or opt-out?
+    - text: Are there predefined settings for data collection, and do they generally favor an opt-in approach?
+    - text: Does the platform come with default settings for data collection, and are these defaults more aligned with opt-in or opt-out?
+    - text: Are there out-of-the-box configurations for data collection, and do they tend to encourage users to opt in by default?
+    - text: Does the platform have pre-established settings for data collection, and do these settings default to opt-in or opt-out?
+
+  utter_ask_User_Right:
+    - text: "As a product or service provider, respecting user rights is paramount.
+            Users should have the right to access and review their data, modify or change details
+            for accuracy, and request the deletion of their information when needed. 
+            
+            Which of these rights do you prioritize to align with user expectations and privacy considerations?"
+    - text: "As a service or product provider, users should be able to see their data,
+            correct it if needed, and delete it when necessary. 
+            
+            Which of these rights do you think is most important for meeting user expectations and ensuring privacy?"
+
+  utter_User_Interaction_Layer_finisher:
+    - text: "Thank you, so much I'think we finich all question in UI Layer\n"
+
+
+  utter_Sec_Comp_Layer_finisher:
+    - text: "Thank you, so much I'think we finich all question in security & compliance Layer\n"
+
+  utter_ask_regulation:
+    - text: "Privacy policies must adhere to relevant regulations, whether international or national.
+             Here is a list of well-known regulations that privacy policies often align with:\n\n- General Data Protection Regulation (GDPR)\n- California Consumer Privacy Act (CCPA)\n- Health Insurance Portability and Accountability Act (HIPAA)\n- Personal Information Protection and Electronic Documents Act (PIPEDA)\n- Children's Online Privacy Protection Act (COPPA)\n- Brazilian General Data Protection Law (LGPD)\n- Personal Data Protection Act (PDPA)\n- Privacy Act of 1974 (United States)\n- Australia Privacy Act 1988\n\nCould you specify which regulation your privacy policy adheres to?"
+
   
 
 
@@ -232,4 +275,9 @@ actions:
 - utter_want_Data_Sharing_rec
 - utter_Data_Sharing_recomendations
 - utter_ask_How_Consent
+- utter_ask_default_opt_in_out_settings
+- utter_ask_data_collection_preferences
+- utter_ask_exclude_data_preferences 
+- utter_ask_User_Right
 - utter_User_Interaction_Layer_starter 
+- utter_User_Interaction_Layer_finisher 

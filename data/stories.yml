@@ -73,6 +73,33 @@ stories:
   - action: utter_Data_Layer_finisher
   - action: utter_Data_Layer_starter 
 
+- story : User Interaction Layer Conversation 
+  steps:
+  - action: utter_User_Interaction_Layer_starter
+  - action: utter_ask_How_Consent
+  - intent: inform_How_Consent
+
+  - action: utter_ask_default_opt_in_out_settings
+  - or:
+    - intent: affirm
+    - intent: deny
+  - action: utter_ask_data_collection_preferences
+  - or:
+    - intent: affirm
+    - intent: deny
+  - action: utter_ask_exclude_data_preferences 
+  - or:
+    - intent: affirm
+    - intent: deny
+  - action: utter_ask_User_Right
+  - intent: inform_user_rights_priority
+  - action: utter_User_Interaction_Layer_finisher  
+
+- story : Regulation Conversation
+  steps:
+  - action: utter_ask_regulation
+  - intent: inform_privacy_regulation
+
 - story: the hole conversation 
   steps:
   - intent: greet
@@ -130,6 +157,24 @@ stories:
 
   - action: utter_Data_Layer_finisher
 
+  - action: utter_User_Interaction_Layer_starter
+  - action: utter_ask_How_Consent
+  - intent: inform_How_Consent
+  - action: utter_ask_default_opt_in_out_settings
+  - or:
+    - intent: affirm
+    - intent: deny
+  - action: utter_ask_data_collection_preferences
+  - or:
+    - intent: affirm
+    - intent: deny
+  - action: utter_ask_exclude_data_preferences 
+  - or:
+    - intent: affirm
+    - intent: deny
+  - action: utter_ask_User_Right
+  - intent: inform_user_rights_priority
+  - action: utter_User_Interaction_Layer_finisher  
 
 - story: interactive_story_1
   steps:
@@ -179,3 +224,12 @@ stories:
   - action: utter_User_Interaction_Layer_starter
   - action: utter_ask_How_Consent
   - intent: inform_How_Consent
+  - action: utter_ask_default_opt_in_out_settings
+  - intent: affirm
+  - action: utter_ask_data_collection_preferences
+  - intent: deny
+  - action: utter_ask_exclude_data_preferences 
+  - intent: affirm
+  - action: utter_ask_User_Right
+  - intent: inform_user_rights_priority
+  - action: utter_User_Interaction_Layer_finisher  

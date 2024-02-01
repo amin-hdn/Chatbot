@@ -103,6 +103,8 @@ nlu:
     - [Healthcare](work_sector) is our industry.
     - We specialize in [Marketing](work_sector).
     - Our focus is on [Security](work_sector).
+    - Our work sector is [Healthcare](work_sector).
+    - we work in the [security](work_sector) industry.
 - intent: inform_geographic_segmentation
   examples: |
     - We have an [international](geographic_segmentation) presence.
@@ -245,7 +247,7 @@ nlu:
     - We use surveys and wearable devices as part of our data collection methods.
     - Electronic forms and patient self-reports are employed for efficient medical data gathering.
     - Data collection involves the use of mobile health apps and smart devices.
-    - Our organization utilizes telemedicine platforms for remote data collection from patients.
+    - Our organization utilizes telemedicine services for remote data collection from patients.
     - Health monitoring devices and sensors play a significant role in our data collection process.
     - Patient portals are used to facilitate self-reporting and engagement in data collection.
     - Our organization employs natural language processing for extracting insights from clinical notes.
@@ -253,7 +255,7 @@ nlu:
     - Wearable devices and EHR contribute to our data collection.
     - Surveys and wearables play a role in our data gathering.
     - Mobile health apps enhance our data collection process.
-    - Telemedicine platforms support remote data collection efforts.
+    - Telemedicine services support remote data collection efforts.
     - Health monitoring devices aid in efficient data gathering.
     - Patient portals facilitate self-reporting for data collection.
     - NLP extracts insights from clinical notes in our data collection.
@@ -268,7 +270,7 @@ nlu:
     - Data collection is facilitated using surveys and wearable devices.
     - We use electronic forms and patient self-reports for efficient gathering.
     - Mobile health apps and smart devices are utilized for data collection.
-    - Telemedicine platforms are employed for remote data collection using video consultations.
+    - Telemedicine services are employed for remote data collection using video consultations.
     - Health monitoring devices and sensors play a key role in our data collection.
     - Using patient portals, we encourage self-reporting for streamlined data collection.
 
@@ -354,7 +356,7 @@ nlu:
   examples: |
     - We request consent through a formal written agreement.
     - Our approach involves obtaining verbal consent during consultations.
-    - Clients provide consent electronically through our online platform.
+    - Clients provide consent electronically through our online service.
     - We use consent forms that patients sign before any data collection.
     - Our process includes explaining the purpose and obtaining verbal confirmation.
     - Patients consent through a dedicated section on our mobile app.
@@ -365,3 +367,96 @@ nlu:
     - Our process involves the use of a formal written agreement.
     - Using our product implies agreement to a formal written consent.
     - We Don't Demand Consentment, the use of our services implies the Consent agreement
+
+- intent: inform_user_rights_priority
+  examples: |
+    - I believe all three rights are equally important for user expectations and privacy.
+    - None of the specified rights (read/change/delete) is particularly crucial; they all contribute to user expectations and privacy.
+    - It's challenging to prioritize one right over the others; each has its significance for user expectations and privacy.
+    - I don't consider any of these rights to be the sole priority; they collectively ensure user expectations and privacy.
+    - Balancing the importance of all three rights (read/change/delete) is key for meeting user expectations and privacy.
+    - I believe all three rights are equally important for user expectations and privacy.
+    - None of these rights stand out as more important; they're all crucial.
+    - It's hard to prioritize one right over the others; they all play a vital role.
+    - I think a balance of all three rights is essential for meeting user expectations and ensuring privacy.
+    - Each of these rights is important in its own way; it's challenging to pick one as the most crucial.
+    - All three rights are equally important for user expectations and privacy.
+    - I believe users should have the right to access, change, and delete their data for comprehensive privacy.
+    - Prioritizing all three rights—access, modification, and deletion—is crucial for meeting user expectations and ensuring privacy.
+    - Allowing users to access, change, and delete their data is essential for user satisfaction and privacy protection.
+    - I think it's important to prioritize all user rights, including access, modification, and deletion, to meet expectations and ensure privacy.
+    - All three rights, including access, modification, and deletion, are equally essential.
+    - I believe users should have the right to access, change, and delete their data.
+    - Prioritizing all three rights—access, modification, and deletion—is crucial.
+    - Allowing users to access, change, and delete their data is fundamental.
+    - I think it's important to prioritize all user rights, including access, modification, and deletion.
+    - I believe all three rights are equally essential.
+    - I think all of them are essential.
+    - All of them are crucial.
+    - None of these rights stands out as more important; they're all crucial.
+    - It's hard to prioritize one right over the others; they all play a vital role.
+    - I think a balance of all three rights is necessary.
+    - Each of these rights is important in its own way; it's challenging to pick one as the most crucial.
+    - Maybe be none of them is crucial
+# the exemple above is crucial
+
+- intent: inform_default_opt_in_out_settings
+  examples: |
+    # Very short
+    - Yes, default settings favor opt-in.
+    - No, defaults are opt-out.
+    - Opt-in is the default.
+    - Defaults lean towards opt-out.
+    - Yes, defaults encourage opt-in.
+    - No, default settings are opt-out.
+    - Opt-in is the initial setting.
+    - Defaults favor opt-out.
+    - It's set to opt-in by default.
+    - Yes, there are default settings, and they encourage opt-in.
+    - No, default settings tend to favor opt-out.
+    - The service defaults to an opt-in approach.
+    - Default configurations strongly encourage opt-in.
+    - Yes, the service provides default settings for data collection, and these defaults are aligned with opt-in, allowing users more control over their data.
+    - While there are default settings for data collection, they generally favor an opt-in approach, giving users the choice to actively participate.
+    - The service does come with default settings for data collection, and these defaults are more aligned with an opt-in strategy, putting user consent at the forefront.
+    - Default configurations for data collection exist, and they tend to encourage users to opt in by default, ensuring transparency and user control.
+    - Yes, the service has pre-established settings for data collection, and these settings default to opt-in, giving users the initial choice.
+    - Certainly! The service does provide default settings for data collection, and these defaults are intentionally aligned with an opt-in approach. This means that users, by default, are encouraged to actively participate and provide consent for data collection. This approach is designed to prioritize user control and transparency, allowing individuals to make informed decisions about their data privacy. The default configurations aim to establish a foundation of trust between the platform and users, fostering a user-centric approach to data collection and ensuring that users have the autonomy to choose their level of engagement with data collection practices.
+    - While the service does have default settings for data collection, it's essential to note that these defaults tend to favor an opt-in strategy. This implies that, by default, users are given the opportunity to actively opt in and provide consent for data collection. The intention behind this approach is to prioritize user autonomy and ensure that individuals have control over their data privacy from the outset. The default configurations aim to strike a balance between user engagement and privacy considerations, allowing users to make conscious decisions about their data participation.
+    - Yes, the service comes with predefined settings for data collection, and these defaults are deliberately aligned with an opt-in philosophy. This means that, by default, users are encouraged to actively participate in data collection by providing consent. The goal is to prioritize user transparency and control, allowing individuals to make informed choices about how their data is collected. The default configurations aim to create a user-centric environment where individuals have the freedom to decide their level of involvement in data collection practices. 
+    - Indeed, there are out-of-the-box configurations for data collection, and these configurations are designed to encourage users to opt in by default. This approach is rooted in the belief that users should actively provide consent for data collection, ensuring that their privacy is respected and that they have control over their information. The default settings aim to create a user-friendly experience, where individuals are empowered to make choices about their data participation right from the start.
+    - Yes, the service does have pre-established settings for data collection, and these settings default to opt-in. This means that, by default, users are provided with the option to actively opt in and provide consent for data collection. The intention is to prioritize user autonomy and ensure that individuals have control over their data privacy. The default configurations are crafted to foster transparency and trust between the platform and users, setting the stage for a user-centric approach to data collection.
+
+
+
+
+
+
+- intent: inform_privacy_regulation
+  examples: |
+    - GDPR
+    - CCPA
+    - HIPAA
+    - LGPD
+    - PDPA
+    - Our privacy policy aligns with GDPR.
+    - We adhere to the privacy standards of CCPA.
+    - HIPAA governs our privacy policy.
+    - LGPD is the regulation our privacy policy follows.
+    - PDPA compliance is crucial in our privacy policy.
+    - Our privacy policy is in accordance with GDPR regulations to protect user data.
+    - CCPA is a cornerstone in shaping our privacy policy to safeguard user information.
+    - HIPAA compliance is embedded in our privacy policy, prioritizing health data security.
+    - LGPD serves as the foundation for our privacy policy, ensuring data protection in Brazil.
+    - PDPA guidelines form the backbone of our privacy policy, emphasizing personal data protection.
+    - Our privacy policy is crafted to meet the stringent requirements of the General Data Protection Regulation (GDPR), a comprehensive data protection framework ensuring user rights and privacy.
+    - The California Consumer Privacy Act (CCPA) plays a pivotal role in shaping our privacy policy, providing users with control over their personal information and enhancing transparency.
+    - Health Insurance Portability and Accountability Act (HIPAA) compliance is deeply ingrained in our privacy policy, safeguarding the confidentiality and integrity of health-related data.
+    - The Brazilian General Data Protection Law (LGPD) is the guiding force behind our privacy policy, dictating the principles and obligations for handling personal data in Brazil.
+    - Our privacy policy is anchored in adherence to the Personal Data Protection Act (PDPA), emphasizing responsible and fair use of personal data.
+    - Our privacy policy complies with GDPR standards.
+    - We follow the regulations outlined in CCPA for our privacy policy.
+    - HIPAA compliance is a key aspect of our privacy policy.
+    - LGPD serves as the basis for our privacy policy in Brazil.
+    - PDPA compliance is integral to our privacy policy.
+
